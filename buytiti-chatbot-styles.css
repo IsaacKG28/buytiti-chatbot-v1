@@ -1,0 +1,137 @@
+.wp-block-buytiti-chatbot-buytiti-chatbot {
+    position: fixed;
+    bottom: 62px;
+    right: 62px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-size: cover;
+    
+}
+.wp-block-buytiti-chatbot-buytiti-chatbot:hover .chat-help {
+    display: block;
+}
+.chat-help {
+    display: none;
+    position: absolute;
+    bottom: 110%;
+    right: 0;
+    background-color: #cbcbcb;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+    width: 160px;
+    height: 35px;
+    font-size: large;
+}
+/* Estilos para la ventana de chat */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 150px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    width: 420px;
+    max-height: 390px;
+    overflow: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#userInput {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#sendButton {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+#sendButton img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilos para el formulario de chat */
+.form-container {
+    padding: 3px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Añade esta línea */
+}
+
+/* Estilos para el mensaje del chat */
+.chat-message {
+    display: flex;
+    align-items: flex-start;
+}
+/* Estilos para el contenedor de la respuesta del chatbot */
+.chatbot-response {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Estilos para la imagen de perfil del chat */
+.chat-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Estilos para el título del chat */
+.chat-title {
+    font-size: 15px;
+    margin-left: 10px;
+}
+#myForm input[type="text"] {
+    position: sticky; /* Añade esta línea */
+    bottom: 0; /* Añade esta línea */
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 2px 0;
+    border: 1px solid black;
+    background: #f1f1f1;
+}
+/* Estilos para el botón de cierre */
+.btn.cancel {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color: #444;
+    padding: 5px 10px; /* Reducir el padding para hacer el botón más pequeño */
+    border: none;
+    border-radius: 5px;
+    margin-top: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* Estilos para el mensaje del usuario */
+.user-message {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Estilos para la imagen de perfil del usuario */
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Estilos para el texto del mensaje del usuario */
+.user-message-text {
+    margin-left: 10px;
+}
